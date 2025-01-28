@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="my4dp">4</dimen>
+    <dimen name="my10dp">10</dimen>
+    <dimen name="my16dp">16</dimen>
+    <dimen name="my20dp">20</dimen>
+    <dimen name="my25dp">25</dimen>
+    <dimen name="my32dp">32</dimen>
+    <dimen name="my40dp">40</dimen>
+    <dimen name="my100dp">100</dimen>
+    <dimen name="my200dp">200</dimen>
+
+    <dimen name="my20sp">20</dimen>
+    <dimen name="my50sp">50</dimen>
+</resources>

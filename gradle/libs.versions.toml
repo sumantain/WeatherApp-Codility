@@ -10,6 +10,18 @@ activityCompose = "1.10.0"
 composeBom = "2024.04.01"
 hiltVersion = "2.51.1"
 location = "20.0.0"
+appcompat = "1.7.0"
+material = "1.12.0"
+retrofit = "2.10.0"
+okhttp = "4.12.0"
+moshi = "2.9.0"
+composeViewmodelLifecycle = "2.4.1"
+hiltViewmodelLifecycle = "1.0.0-alpha03"
+mockk = "1.13.13"
+robolectric = "4.14"
+junitKtx = "1.2.1"
+hiltAndroidTesting = "2.51.1"
+hiltAndroidCompiler = "2.51.1"
 
 
 [libraries]
@@ -29,12 +41,28 @@ androidx-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit
 androidx-material3 = { group = "androidx.compose.material3", name = "material3" }
 hilt-android = { group = "com.google.dagger", name = "hilt-android" ,  version.ref = "hiltVersion"}
 hilt-compiler = { group = "com.google.dagger", name = "hilt-compiler" , version.ref = "hiltVersion"}
+hilt-viewmodel-lifecycle = { group = "androidx.hilt", name = "hilt-lifecycle-viewmodel" , version.ref = "hiltViewmodelLifecycle"}
+
 play-services-location = { group = "com.google.android.gms", name = "play-services-location", version.ref = "location"}
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+retrofit = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofit" }
+okhttp = {group = "com.squareup.okhttp3", name = "okhttp", version.ref = "okhttp"}
+moshi-converter = { group = "com.squareup.retrofit2", name = "converter-moshi", version.ref = "moshi" }
+
+compose-viewmodel-lifecycle ={ group = "androidx.lifecycle",name = "lifecycle-viewmodel-compose", version.ref = "composeViewmodelLifecycle" }
+
+mockk = { group = "io.mockk", name = "mockk", version.ref = "mockk"}
+robolectric = { group = "org.robolectric", name = "robolectric", version.ref = "robolectric" }
+androidx-junit-ktx = { group = "androidx.test.ext", name = "junit-ktx", version.ref = "junitKtx" }
+hilt-android-testing = { group = "com.google.dagger", name = "hilt-android-testing", version.ref = "hiltAndroidTesting" }
+hilt-android-compiler = { group = "com.google.dagger", name = "hilt-android-compiler", version.ref = "hiltAndroidCompiler" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
 kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 org-jetbrains-kotlin-kapt = { id = "org.jetbrains.kotlin.kapt", version.ref = "kotlin" }
 hiltAndroid = { id = "com.google.dagger.hilt.android", version.ref = "hiltVersion" }
+android-library = { id = "com.android.library", version.ref = "agp" }
 
 

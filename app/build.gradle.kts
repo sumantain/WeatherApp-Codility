@@ -53,6 +53,8 @@ android {
 }
 
 dependencies {
+    implementation(project(":core"))
+    implementation(project(":weather"))
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
@@ -62,7 +64,14 @@ dependencies {
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
+    implementation(libs.androidx.junit.ktx)
+
     testImplementation(libs.junit)
+    testImplementation(libs.mockk)
+    testImplementation(libs.robolectric)
+    testImplementation(libs.hilt.android.testing)
+    kaptTest(libs.hilt.android.compiler)
+
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
     androidTestImplementation(platform(libs.androidx.compose.bom))
@@ -73,4 +82,13 @@ dependencies {
     //Hilt
     implementation(libs.hilt.android)
     kapt(libs.hilt.compiler)
+//    implementation(libs.hilt.viewmodel.lifecycle)
+
+    implementation(libs.retrofit)
+    implementation(libs.okhttp)
+    implementation(libs.moshi.converter)
+
+    implementation(libs.play.services.location)
+
+    implementation(libs.compose.viewmodel.lifecycle)
 }
